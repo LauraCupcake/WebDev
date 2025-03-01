@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=width-device, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>HTML and CSS</header>
+      <ul>
+        <li>
+          <a class="nav-link" href=#Introduction>Introduction</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Basic_Structure_of_a_HTML_code">Basic Structure of a HTML code</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#What_to_write_inside_a_head?">What to write inside a head?</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#What_to_write_inside_a_body?">What to write inside a body?</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Basic_CSS">Basic CSS</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Conclusion">Conclusion</a>
+        </li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <p>HTML is just like a raw code. CSS makes HTML codes alive.</p>
+        <p>Learning HTML and CSS is not that hard but it's really hard to master at using them.</p>
+        <p>Remember - <b>Consistently learning is a must in coding.</b> ¯\_( ͡^ ͜ʖ ͡^)_/¯</p>
+      </section>
+      <section class="main-section" id="Basic_Structure_of_a_HTML_code">
+        <header>Basic Structure of a HTML code</header>
+        <p>Every language has its basic structure. So do HTML.</p>
+        <p>Here's an example of the basic structure of a HTML code.</p>
+        <pre><code>
+  &lt;!DOCTYPE html&gt;
+  &lt;html lang="en"&gt;
+      &lt;head&gt;...&lt;/head&gt;
+      &lt;body&gt;...&lt;/body&gt;
+  &lt;/html&gt;
+        </code></pre>
+
+      </section>
+      <section class="main-section" id="What_to_write_inside_a_head?">
+        <header>What to write inside a head?</header>
+        <p>Key elements in head: </p>
+        <ul>
+          <li>Title and Encoding</li>
+          <li>Viewport for responsiveness</li>
+          <li>CSS link</li>
+          <li>JavaScript</li>
+        </ul>
+        <pre><code>
+  &lt;head&gt;
+    &lt;title&gt;My Webpage&lt;/title&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;meta name="description" content="A great webpage"&gt;
+    &lt;meta property="og:title" content="My Webpage"&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+    &lt;script src="script.js" defer&gt;&lt;/script&gt;
+  &lt;/head&gt;
+      </code></pre>
+      </section>
+      <section class="main-section" id="What_to_write_inside_a_body?">
+        <header>What to write inside a body?</header>
+        <p>Key elements in body: </p>
+        <ul>
+          <li>Headings and Text content</li>
+          <li>Images and Media</li>
+          <li>Links and navigations</li>
+          <li>Lists (ordered and unordered)</li>
+          <li>Forms and User Input</li>
+          <li>Buttons and Interactivity</li>
+          <li>Footer</li>
+        </ul>
+        <pre><code>
+  &lt;body&gt;
+    &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+    &lt;p&gt;This is a sample paragraph.&lt;/p&gt;
+
+    &lt;img src="image.jpg" alt="A beautiful view"&gt;
+    &lt;video controls&gt;
+        &lt;source src="video.mp4" type="video/mp4"&gt;
+    &lt;/video&gt;
+
+    &lt;nav&gt;
+        &lt;a href="home.html"&gt;Home&lt;/a&gt;
+        &lt;a href="about.html"&gt;About&lt;/a&gt;
+    &lt;/nav&gt;
+
+    &lt;ul&gt;
+        &lt;li&gt;Item 1&lt;/li&gt;
+        &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;form action="submit.php" method="post"&gt;
+        &lt;input type="text" placeholder="Enter your name"&gt;
+        &lt;button type="submit"&gt;Submit&lt;/button&gt;
+    &lt;/form&gt;
+
+    &lt;button onclick="alert('Hello!')"&gt;Click Me&lt;/button&gt;
+
+    &lt;footer&gt;
+        &lt;p&gt;&copy; 2025 My Website&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+      </code></pre>
+      </section>
+      <section class="main-section" id="Basic_CSS">
+        <header>Basic CSS</header>
+        <p>A few concept of CSS: </p>
+        <ul>
+          <li>Selectors (Targeting elements)</li>
+          <li>Colors and backgrounds</li>
+          <li>Text Styling (Font, Size,and Alignment)</li>
+          <li>Box Model (Margin, Padding, Border)</li>
+          <li>Flexbox for Layout</li>
+          <li>Hover effects and Transitions</li>
+        </ul>
+        <pre><code>
+  /* 1. Selectors */
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  /* 2. Colors & Backgrounds */
+  h1 {
+    color: blue;
+    background-color: lightgray;
+  }
+
+  /* 3. Text Styling */
+  p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  /* 4. Box Model */
+  div {
+    width: 200px;
+    padding: 10px;
+    margin: 20px;
+    border: 2px solid black;
+  }
+
+  /* 5. Flexbox for Layout */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  /* 6. Hover Effects & Transitions */
+  button {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    transition: background-color 0.3s;
+  }
+
+  button:hover {
+    background-color: darkgreen;
+  }
+      </code></pre>
+      </section>
+      <section class="main-section" id="Conclusion">
+        <header>Conclusion</header>
+        <p>HTML provides the structure of a webpage, while CSS enhances its style and layout. Together, they create visually appealing and functional websites. Mastering both allows you to build responsive, user-friendly designs.</p>
+        <pre><code>
+&lt;p style="color:blue;
+font-weight:bold;
+"&gt;HTML is the skeleton, CSS is the fashion designer! 🎨💅&lt;/p&gt;
+        </code></pre>
+        <p>Some of those are taken as a reference from <a href="https://chatgpt.com/" target="_blank"> <u>POOKIE♥.</u> </a></p>
+      </section>
+    </main>
+  </body>
+</html>
